@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>csm</title>
+    </head>
+    <body>
+        <div id="container">
+            <div class="header-container">
+                <img
+                    src="./src/assets/images/inbug.png"
+                    alt="Buyer"
+                    class="main-logo"
+                />
+                <div class="tabs">
+                    <button class="tab-button" data-tab="buyer">Buyer</button>
+                    <button class="tab-button active" data-tab="seller">
+                        Seller
+                    </button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="buyer-tab">
+                <div class="tab-layout">
+                    <div id="chat-section" class="buyer-chat">
+                        <div id="chat-history">
+                            <div class="message bot-message">
+                                Hi! The LinkedIn Creative Services Marketplace
+                                can help you find a creative services
+                                professional for your project.
+                                <br /><br />Right now, I can help you find
+                                lawyers and architects. <br /><br />What do you
+                                need help with?
+                            </div>
+                            <div class="thinking-indicator hidden">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <textarea
+                            id="buyer-input"
+                            placeholder="What are you looking for help with?"
+                        ></textarea>
+                    </div>
+
+                    <div id="profile-section">
+                        <div class="profile-cards">
+                            <!-- <div class="profile-card">
+                                <img
+                                    src="path/to/image.jpg"
+                                    alt="Profile"
+                                    class="profile-image"
+                                />
+                                <div class="profile-info">
+                                    <div class="profile-title">John Doe</div>
+                                    <div class="profile-summary">
+                                        Owner at Architecture Club
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div id="drop-zone">
+                            <p>Drag & Drop Images or Documents Here</p>
+                            <img
+                                id="preview-image-buyer"
+                                alt="Preview"
+                                style="
+                                    max-width: 100%;
+                                    max-height: 200px;
+                                    display: none;
+                                "
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content active" id="seller-tab">
+                <div class="tab-layout">
+                    <div id="profile-section">
+                        <div class="profile-cards">
+                            <div class="profile-card">
+                                <img
+                                    id="seller-profile-image"
+                                    src="./src/assets/images/tom_seller.svg"
+                                    alt="Tom Seller"
+                                    class="profile-image"
+                                />
+                                <div class="profile-info">
+                                    <div
+                                        id="seller-profile-title"
+                                        class="profile-title"
+                                    >
+                                        Tom Seller
+                                    </div>
+                                    <div
+                                        id="seller-profile-summary"
+                                        class="profile-summary"
+                                    >
+                                        Partner @ Lawtown
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="drop-zone">
+                            <p>Drag & Drop Images or Documents Here</p>
+                            <img
+                                id="preview-image-seller"
+                                alt="Preview"
+                                style="
+                                    max-width: 100%;
+                                    max-height: 200px;
+                                    display: none;
+                                "
+                            />
+                        </div>
+                    </div>
+
+                    <div class="seller-input-column">
+                        <div class="instruction-box">
+                            Tell me a bit about your specialities and
+                            experiences.
+                            <br /><br />
+                            You can also drag and drop images, documents or URLs
+                            from your portfolio.
+                        </div>
+
+                        <div class="tag-cloud-container">
+                            <h3>Your Specialties</h3>
+                            <div
+                                class="tag-cloud"
+                                id="seller-specialties-cloud"
+                            ></div>
+                        </div>
+
+                        <textarea
+                            class="seller-input"
+                            placeholder="Tell me a bit about your specialities and experiences..."
+                        ></textarea>
+
+                        <div class="thinking-indicator hidden">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./src/main.js" type="module"></script>
+    </body>
+</html>

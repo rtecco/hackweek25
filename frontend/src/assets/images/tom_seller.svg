@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="180" fill="#e0e0e0"/>
+  
+  <!-- Face shape -->
+  <path d="M200 50 
+           C 280 50, 320 140, 320 220
+           C 320 300, 280 350, 200 350
+           C 120 350, 80 300, 80 220
+           C 80 140, 120 50, 200 50" 
+        fill="#ffdbac"/>
+  
+  <!-- Hair -->
+  <path d="M200 50 
+           C 280 50, 320 140, 320 220
+           C 320 240, 318 260, 315 275
+           C 250 285, 220 240, 200 220
+           C 180 240, 150 285, 85 275
+           C 82 260, 80 240, 80 220
+           C 80 140, 120 50, 200 50" 
+        fill="#4a4a4a"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="150" cy="180" rx="25" ry="15" fill="white"/>
+  <ellipse cx="250" cy="180" rx="25" ry="15" fill="white"/>
+  <circle cx="150" cy="180" r="10" fill="#4a4a4a"/>
+  <circle cx="250" cy="180" r="10" fill="#4a4a4a"/>
+  
+  <!-- Eyebrows -->
+  <path d="M125 155 C140 150, 160 150, 175 155" 
+        fill="none" stroke="#4a4a4a" stroke-width="5"/>
+  <path d="M225 155 C240 150, 260 150, 275 155" 
+        fill="none" stroke="#4a4a4a" stroke-width="5"/>
+  
+  <!-- Nose -->
+  <path d="M190 200 C200 220, 210 220, 220 200" 
+        fill="none" stroke="#c68642" stroke-width="3"/>
+  
+  <!-- Mouth -->
+  <path d="M160 250 C180 270, 220 270, 240 250" 
+        fill="none" stroke="#c68642" stroke-width="3"/>
+</svg>
